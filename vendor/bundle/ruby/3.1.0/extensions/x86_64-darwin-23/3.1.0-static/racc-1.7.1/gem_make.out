@@ -1,0 +1,17 @@
+current directory: /Users/jonasjensen/Documents/Homepage/jonasjensen.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.7.1/ext/racc/cparse
+/Users/jonasjensen/.rubies/ruby-3.1.4/bin/ruby -I /Users/jonasjensen/.rubies/ruby-3.1.4/lib/ruby/3.1.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/jonasjensen/Documents/Homepage/jonasjensen.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230922-77313-dk7p05 sitelibdir\=./.gem.20230922-77313-dk7p05 clean
+
+current directory: /Users/jonasjensen/Documents/Homepage/jonasjensen.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230922-77313-dk7p05 sitelibdir\=./.gem.20230922-77313-dk7p05
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/jonasjensen/Documents/Homepage/jonasjensen.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230922-77313-dk7p05 sitelibdir\=./.gem.20230922-77313-dk7p05 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230922-77313-dk7p05/racc
