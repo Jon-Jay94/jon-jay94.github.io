@@ -1,6 +1,6 @@
 ---
 title: "Teaching"
-permalink: /teaching/
+permalink: teaching/
 author_profile: true
 # header:
 #   image: /assets/images/haceta-crop2.jpg
