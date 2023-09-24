@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="files/cv_example.pdf" type="application/pdf" />
+ You can find a current version of my CV [here](/files/cv_example.pdf)
+
+<!-- <a src="{{ site.baseurl }}/files/cv_example.pdf" type="application/pdf" /> -->
 
 
