@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
- You can find a current version of my CV [here](/files/cv_example.pdf)
+ You can find a current version of my CV [here]({{ site.baseurl }}/files/cv_example.pdf)
 
 <!-- <a src="{{ site.baseurl }}/files/cv_example.pdf" type="application/pdf" /> -->
 
