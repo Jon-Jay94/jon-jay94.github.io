@@ -10,7 +10,7 @@ All courses were taught at the Frankfurt School of Finance & Management unless o
 
 ### Main Instructor
 
-*Pre-Course in Macroeconomics*, MBA 2022 & 2023
+*Pre-Course in Macroeconomics*, MBA, 2022 & 2023
 
 
 ### Tutorials
