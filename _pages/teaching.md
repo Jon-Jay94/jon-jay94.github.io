@@ -10,9 +10,9 @@ All courses were taught at the Frankfurt School of Finance & Management unless o
 
 ### Main Instructor
 
-*Pre-Course in Macroeconomics*, 2022 & 2023
+*Pre-Course in Macroeconomics*, MBA 2022 & 2023
 
 
 ### Tutorials
 
-*Econometrics & Statistics*, Main Instructor: Prof. Emanuel Mönch, 2022 & 2023
+*Econometrics & Statistics*, Master of Finance, Main Instructor: Prof. Emanuel Mönch, 2022 & 2023
