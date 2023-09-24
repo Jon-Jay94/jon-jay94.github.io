@@ -7,7 +7,7 @@ author_profile: true
 
 ## Working Papers
 
-"The Impact of Monetary Policy and Lender-of-Last-Resort Announcements on the Treasury Market" with L. Boneva \& S. Weidner. CEPR Discussion Paper [18426](https://cepr.org/publications/dp18426)
+"The Impact of Monetary Policy and Lender-of-Last-Resort Announcements on the Treasury Market" with L. Boneva & S. Weidner. CEPR Discussion Paper [18426](https://cepr.org/publications/dp18426)
 
 <details>
   <summary>Abstract</summary>
