@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="https://jon-jay94.github.io/jonas.jensen.github.io/files/cv_example.pdf" type="application/pdf"/>
+<embed src="https://jon-jay94.github.io/jonasjensen.github.io/files/cv_example.pdf" type="application/pdf"/>
 
 
