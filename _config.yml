@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jonas Jensen"
+title                    : "Jonas Camargos Jensen"
 title_separator          : "-"
-name                     : &name "Jonas Jensen"
+name                     : &name "Jonas Camargos Jensen"
 description              : &description "personal description"
 url                      : https://jonasjensen.eu # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
