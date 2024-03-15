@@ -13,5 +13,5 @@ In particular, I'm interested in studying if monetary policy decisions have diff
 
 In addition, I'm currently teaching a pre-course in Macroeconomics in the MBA program at the Frankfurt School of Finance & Management where I introduce the students the workings of the global economic and financial system. I also teach tutorials in Econometrics & Statistics in the Master of Finance program.
 
-My supervisor is [Prof. Emanuel Mönch](https://scholar.google.com/citations?user=8Cuk5vYAAAAJ&hl=en).
+<!-- My supervisor is [Prof. Emanuel Mönch](https://scholar.google.com/citations?user=8Cuk5vYAAAAJ&hl=en). -->
 
