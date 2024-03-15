@@ -17,6 +17,14 @@ author_profile: true
 
 ## Work in Progress
 
+"Volume-based Surprises"
+<details>
+  <summary>Abstract</summary>
+   <i>
+This paper proposes to identify surprises around Federal Open Market Com- mittee (FOMC) announcements based on the abnormal trading trading volume in Eurodollar Futures. The approach identifies announcement-specific window lengths designed to capture convergence trading among market participants. The resulting volume-based window lengths frequently exceed commonly used 30- minute windows.
+Volume-based monetary policy surprises suggest that monetary policy has a more pronounced impact on stock prices, term premia, and the economy than previously believed. Notably, volume-based Path surprises elicit responses akin to conventional surprises. These findings underscore the importance of incorpo- rating trading volume dynamics in understanding the effects of monetary policy announcements.</i>
+</details>
+<br>
 
 <!-- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
