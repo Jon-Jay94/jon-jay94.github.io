@@ -90,3 +90,47 @@
     }
   }
 }
+
+/* Hide sitemap/navigation links in footer */
+.page__footer {
+  
+  /* Hide common sitemap elements */
+  .archive__item-title,
+  .archive__item,
+  .list__item,
+  nav,
+  .nav__list,
+  .archive__subtitle,
+  .taxonomy__count {
+    display: none !important;
+  }
+  
+  /* Hide any navigation sections */
+  nav[role="navigation"] {
+    display: none !important;
+  }
+  
+  /* Hide page links */
+  .page__related,
+  .page__share {
+    display: none !important;
+  }
+  
+  /* Keep only the follow section and copyright */
+  .page__footer-follow,
+  .page__footer-copyright {
+    display: block !important;
+  }
+}
+
+/* Alternative: Hide any unordered lists in footer except social icons */
+.page__footer ul:not(.social-icons) {
+  display: none !important;
+}
+
+/* Hide any additional navigation that might be added */
+.page__footer .navigation,
+.page__footer .site-nav,
+.page__footer .footer-nav {
+  display: none !important;
+}
