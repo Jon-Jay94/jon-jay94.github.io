@@ -1,4 +1,3 @@
-// Ensure this file starts with front matter dashes so Jekyll builds it:
 ---
 ---
 
@@ -15,7 +14,8 @@
   display: inline-block; margin-right: .5rem; margin-bottom: .35rem; padding: .35rem .7rem;
   border: 1px solid #ddd; border-radius: .5rem; text-decoration: none;
 }
-.paper__small { font-size: .9rem; color: var(--mm-muted, #666); margin-top: .25rem; }
+.paper__small { color: var(--mm-muted, #666); margin-top: .25rem; }
+body.home .paper__small { font-size: 0.8rem; }
 .bibtex summary { cursor: pointer; }
 .bibtex pre { background: #f7f7f7; padding: .75rem; border-radius: .5rem; overflow: auto; }
 
@@ -31,3 +31,246 @@
 
 .paper__details summary { cursor: pointer; margin: .25rem 0 .5rem; font-weight: 600; }
 .paper__details[open] summary { opacity: .8; }
+
+
+.paper { margin-bottom: 1.5rem; }
+.paper-title { cursor: pointer; display: flex; align-items: center; gap: .5rem; margin: 0 0 .25rem; }
+.paper-title:focus { outline: 2px solid; outline-offset: 2px; }
+.paper-badge { font-size: .8rem; padding: .1rem .4rem; border: 1px solid currentColor; border-radius: .25rem; white-space: nowrap; }
+.paper-body { padding-left: .25rem; }
+.paper-section { margin: .5rem 0; }
+.paper-section-title { font-weight: 600; margin-bottom: .25rem; }
+.paper-links { margin: .5rem 0; display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+.paper-link { text-decoration: underline; }
+.paper-dot { opacity: .6; }
+
+.paper__title-link {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.paper__title-link:hover,
+.paper__title-link:focus {
+  color: #007bff;
+  text-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.paper__title {
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.paper {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.paper:hover {
+  background-color: #f9f9fb;
+}
+
+.section-rule {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 1.25rem 0 2rem;
+}
+
+/* Paper block spacing */
+.paper { padding: .25rem 0; }
+
+/* Title row: clickable title + badge */
+.paper__title {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0.25rem 0 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+.paper__title-link {
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s ease, color .2s ease;
+}
+.paper__title-link:hover,
+.paper__title-link:focus { border-bottom-color: currentColor; }
+
+/* “Job Market Paper” badge pill */
+.badge {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: .15rem .45rem;
+  border-radius: 999px;
+  border: 1px solid #c7d2fe;
+}
+
+/* Coauthors/venue subdued */
+.paper__meta { color:#6b7280; margin-top: -.15rem; margin-bottom: .45rem; }
+
+/* Buttons row */
+.paper__cta .btn { margin-right: .35rem; margin-bottom: .35rem; }
+
+/* “Abstract” micro-header */
+.paper__label {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color:#6b7280;
+  margin: .8rem 0 .3rem;
+}
+.paper__abstract { margin: 0 0 .85rem; }
+
+
+/* ====== Kontz-like typography & layout polish ====== */
+:root {
+  --accent: #0f172a;     /* deep slate for headings */
+  --accent-2: #1d4ed8;   /* blue hover */
+  --text: #0b1220;       /* body text */
+  --muted: #6b7280;      /* subdued */
+  --rule: #e5e7eb;       /* thin separators */
+}
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body.home {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* Headings: clear separation and hierarchy */
+h1, h2, h3, h4 { color: var(--accent); font-weight: 700; line-height: 1.25; }
+h1 { font-size: clamp(1.9rem, calc(1.2rem + 2.2vw), 2.4rem); margin: 0 0 .6rem; }
+h2 { font-size: clamp(1.5rem, calc(1rem + 1.5vw), 1.8rem); margin: 1.2rem 0 .5rem; }
+h3 { font-size: 1.2rem; margin: .6rem 0 .35rem; }
+h4 { font-size: .95rem; margin: .8rem 0 .3rem; font-weight: 600; color: var(--muted);
+     text-transform: uppercase; letter-spacing: .06em; }
+
+/* Thin section rule like Kontz */
+.section-rule { border: 0; border-top: 1px solid var(--rule); margin: 1.25rem 0 2rem; }
+
+/* Paper block */
+.paper { padding: .5rem 0 1rem; }
+.paper__meta { color: var(--muted); margin: -.15rem 0 .45rem; }
+.paper__label { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); margin: .8rem 0 .3rem; }
+.paper__abstract { margin: 0 0 .85rem; }
+
+/* Clickable title that also toggles details */
+.paper__title { display: inline-flex; align-items: center; gap: .5rem; margin-bottom: .25rem; cursor: pointer; }
+.paper__title-link { text-decoration: none; font-weight: 600;
+  border-bottom: 1px solid transparent; transition: border-color .2s ease, color .2s ease, text-shadow .2s ease; }
+.paper__title-link:hover, .paper__title-link:focus { color: var(--accent-2); border-bottom-color: currentColor;
+  text-shadow: 0 0 4px rgba(29,78,216,.25); }
+
+/* Badge pill for statuses like Job Market Paper */
+.badge { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; background: #eef2ff; color: #3730a3;
+  padding: .15rem .45rem; border-radius: 999px; border: 1px solid #c7d2fe; }
+
+/* Buttons next to Draft/Slides/Code/BibTeX */
+.paper__cta .btn {
+  display: inline-block; padding: .35rem .6rem; border: 1px solid var(--rule); border-radius: .375rem;
+  text-decoration: none; font-weight: 500; line-height: 1; margin-right: .35rem; margin-bottom: .35rem;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.paper__cta .btn:hover, .paper__cta .btn:focus { border-color: var(--accent-2); color: var(--accent-2); background: #f0f6ff; }
+
+/* Keep details summary accessible but invisible */
+.screen-reader-text { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.paper__details[open] { animation: details-open .15s ease; }
+@keyframes details-open { from { opacity: .6; } to { opacity: 1; } }
+
+/* ===== Homepage-only paper typography (Kontz-inspired, final) ===== */
+body.home .paper__title {
+  font-size: 1.26rem;          /* understated title, still the leader */
+  line-height: 1.28;
+  margin: 0.30rem 0 0.35rem;
+  font-weight: 600;
+}
+
+body.home .paper__meta {
+  font-size: 0.84rem;          /* coauthors / venue */
+  line-height: 1.4;
+  color: #6b7280;
+  margin: 0 0 0.35rem;
+}
+
+body.home .paper__label {
+  font-size: 0.72rem;          /* tiny label */
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #9ca3af;
+  margin: .70rem 0 .20rem;
+}
+
+
+/* Abstract text only (slightly smaller) */
+body.home .paper__abstract,
+body.home .paper__abstract p {
+  font-size: 0.80rem;          /* abstract a bit smaller */
+  line-height: 1.62;
+  color: #374151;
+}
+
+/* Selected Presentations noticeably smaller */
+body.home .page__content .paper__details ul,
+body.home .page__content .paper__details li,
+body.home .page__content .paper__details p {
+  font-size: 0.72rem;          /* smaller than abstract */
+  line-height: 1.5;
+}
+
+body.home .paper__abstract {
+  max-width: 68ch;             /* comfy line length */
+  margin: .15rem 0 1.10rem;
+}
+
+body.home .paper__details ul { margin: .30rem 0 .80rem 1.20rem; }
+body.home .paper__details li { margin: .12rem 0; }
+body.home .paper__details li::marker { color: #9ca3af; }
+
+/* === Force abstract & presentations to shrink despite theme p{font-size:1em} === */
+/* Make containers smaller and then force inner paragraphs/lis to inherit that size */
+.home .page__content .paper .paper__abstract { font-size: 0.80rem; }
+.home .page__content .paper .paper__abstract p { font-size: inherit !important; line-height: 1.62; }
+
+.home .page__content .paper .paper__presentations { font-size: 0.72rem; }
+.home .page__content .paper .paper__presentations p,
+.home .page__content .paper .paper__presentations li,
+.home .page__content .paper .paper__presentations ul { font-size: inherit !important; line-height: 1.5; }
+
+
+
+
+/* ===== Small arrow toggle beside paper title ===== */
+.paper__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paper__toggle {
+  font-size: 1rem;
+  color: #6b7280;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  margin-left: 0.4rem;
+}
+
+.paper__toggle:hover {
+  color: #111827;
+  opacity: 0.8;
+}
+
+.paper__toggle[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
