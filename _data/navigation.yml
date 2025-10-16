@@ -4,14 +4,14 @@ main:
   - title: "CV"
     url: /files/cv_academic_formatted.pdf
 
-  - title: "Research"
-    url: /publications/
+  # - title: "Research"
+  #   url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Teaching"
+  #   url: /teaching/    
     
   # - title: "Portfolio"
   #   url: /portfolio/

@@ -1,0 +1,33 @@
+// Ensure this file starts with front matter dashes so Jekyll builds it:
+// ---
+// ---
+
+.paper { margin: 0 0 1.75rem; }
+.paper__title { margin: .25rem 0 .5rem; font-weight: 700; line-height: 1.2; }
+.badge {
+  display: inline-block; margin-left: .5rem; padding: .15rem .5rem;
+  font-size: .75rem; border-radius: .5rem; background: var(--mm-primary, #111); color: #fff;
+}
+.paper__meta { margin: .1rem 0 .4rem; color: var(--mm-muted, #666); }
+.paper__awards { margin: .2rem 0 .6rem; font-size: .9rem; }
+.paper__abstract { margin: .6rem 0 .8rem; }
+.paper__cta .btn {
+  display: inline-block; margin-right: .5rem; margin-bottom: .35rem; padding: .35rem .7rem;
+  border: 1px solid #ddd; border-radius: .5rem; text-decoration: none;
+}
+.paper__small { font-size: .9rem; color: var(--mm-muted, #666); margin-top: .25rem; }
+.bibtex summary { cursor: pointer; }
+.bibtex pre { background: #f7f7f7; padding: .75rem; border-radius: .5rem; overflow: auto; }
+
+.section-rule { border: 0; border-top: 1px solid #eee; margin: 1.5rem 0; }
+
+/* Optional: wider content on home */
+.layout--single .page__content { max-width: 920px; }
+
+/* Responsive figure */
+.paper__figure { margin: 1rem 0; }
+.paper__figure img { width: 100%; height: auto; border-radius: .5rem; }
+
+
+.paper__details summary { cursor: pointer; margin: .25rem 0 .5rem; font-weight: 600; }
+.paper__details[open] summary { opacity: .8; }
