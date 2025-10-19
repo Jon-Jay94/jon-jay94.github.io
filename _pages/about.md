@@ -72,7 +72,7 @@ I will be on the academic job market in 2025/2026.
 
 ## Working Papers
 
-{% include paper.html title=page.paper1.title coauthors=page.paper1.coauthors draft_url=page.paper1.draft_url bibtex=page.paper1.bibtex presentations=page.paper1.presentations expanded=false %}
+{% include paper.html title=page.paper1.title coauthors=page.paper1.coauthors abstract=page.paper1.abstract draft_url=page.paper1.draft_url bibtex=page.paper1.bibtex presentations=page.paper1.presentations expanded=false %}
 
 
 
