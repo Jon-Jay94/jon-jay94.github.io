@@ -18,7 +18,7 @@ jmp:
       author={Camargos Jensen, Jonas},
       year={2025}
     }
-  presentations: "AFA 2026, 9th HEC Paris Finance PhD Workshop, Barcelona Summer Forum - Advances in Structural Shock Identification, AEA 2025, 3rd PhD Workshop on Money & Finance at Sveriges Riksbank"
+  presentations: "AFA 2026 - Poster Session, 9th HEC Paris Finance PhD Workshop, Barcelona Summer Forum - Advances in Structural Shock Identification, 3rd PhD Workshop on Money & Finance at Sveriges Riksbank"
 
 paper1:
   title: "Liquidity Facilities: Evidence from High-Frequency Identification"
