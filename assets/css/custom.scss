@@ -300,35 +300,30 @@ body.home .paper__details li::marker { color: #9ca3af; }
   font-size: 0.85rem;
 }
 
-/* --- Normalize Draft and BibTeX button sizing --- */
-/* --- Normalize Draft and BibTeX button sizing but keep original theme colors --- */
+/* --- High-contrast Draft & BibTeX buttons --- */
 .paper__links a.btn--small,
 .paper__links button.btn--small {
   font-size: 0.85rem;
   font-weight: 500;
   line-height: 1.1;
-  padding: 0.25rem 0.6rem;
+  padding: 0.32rem 0.8rem;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: auto;
   text-decoration: none;
   cursor: pointer;
-}
 
-/* Restore original theme button colors */
-.paper__links a.btn--small,
-.paper__links button.btn--small {
-  background-color: var(--button-bg-color, #f0f4f8);
-  border: 1px solid var(--button-border-color, #d1d5db);
-  color: var(--button-text-color, #111827);
+  background-color: #475569;   /* dark slate gray-blue */
+  border: 1px solid #334155;   /* subtle edge contrast */
+  color: #f9fafb;              /* near-white text */
+  transition: all 0.15s ease-in-out;
 }
 
 .paper__links a.btn--small:hover,
 .paper__links button.btn--small:hover {
-  background-color: var(--button-hover-bg-color, #e5e7eb);
-  border-color: var(--button-hover-border-color, #cbd5e1);
-  color: var(--button-hover-text-color, #111);
+  background-color: #1e293b;   /* deep navy-gray on hover */
+  border-color: #0f172a;
+  color: #ffffff;
   text-decoration: none;
 }
