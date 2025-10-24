@@ -274,3 +274,30 @@ body.home .paper__details li::marker { color: #9ca3af; }
 .paper__toggle[aria-expanded="true"] {
   transform: rotate(180deg);
 }
+.paper__links .btn--small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.paper__links .btn--small:hover,
+.paper__links .btn--small:focus {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+  text-decoration: none;
+  color: #111827;
+}
+
+.paper__links .btn--small button,
+.paper__links .btn--small a {
+  line-height: 1.2;
+}
