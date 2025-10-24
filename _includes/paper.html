@@ -59,11 +59,11 @@ Usage:
       {% if include.ssrn_url %}<a class="btn" href="{{ include.ssrn_url }}">SSRN</a>{% endif %}
       {% if include.slide_url %}<a class="btn" href="{{ include.slide_url }}">Slides</a>{% endif %}
       {% if include.code_url %}<a class="btn" href="{{ include.code_url }}">Code/Data</a>{% endif %}
-      {% if include.bibtex %}
-      <a class="btn" href="#" onclick="event.preventDefault(); this.nextElementSibling.style.display = (this.nextElementSibling.style.display === 'block' ? 'none' : 'block');">BibTeX</a>
-      <pre style="display:none;"><code>{{ include.bibtex | escape }}</code></pre>
-      {% endif %}
     </p>
+    {% if include.bibtex %}
+      <button class="btn btn--small bibtex-toggle" type="button">BibTeX</button>
+      <pre class="bibtex-entry" style="display: none;">{{ include.bibtex }}</pre>
+    {% endif %}
 
 
     {% if include.presentations %}
@@ -98,4 +98,12 @@ Usage:
       toggle.textContent = "▴";
     }
   });
+</script>
+<script>
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bibtex-toggle")) {
+    const bib = e.target.nextElementSibling;
+    bib.style.display = (bib.style.display === "none" || bib.style.display === "") ? "block" : "none";
+  }
+});
 </script>
