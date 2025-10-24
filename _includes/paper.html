@@ -54,15 +54,24 @@ Usage:
       <div class="paper__abstract">{{ include.abstract | markdownify }}</div>
     {% endif %}
 
-    <p class="paper__cta">
-      {% if include.draft_url %}<a class="btn" href="{{ include.draft_url }}">Draft</a>{% endif %}
-      {% if include.ssrn_url %}<a class="btn" href="{{ include.ssrn_url }}">SSRN</a>{% endif %}
-      {% if include.slide_url %}<a class="btn" href="{{ include.slide_url }}">Slides</a>{% endif %}
-      {% if include.code_url %}<a class="btn" href="{{ include.code_url }}">Code/Data</a>{% endif %}
-    </p>
+    <div class="paper__links">
+      {% if include.draft_url %}
+        <a href="{{ include.draft_url }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+          Draft
+        </a>
+      {% endif %}
+
+      {% if include.bibtex %}
+        <button class="btn btn--small bibtex-toggle" type="button">
+          BibTeX
+        </button>
+      {% endif %}
+    </div>
+
     {% if include.bibtex %}
-      <button class="btn btn--small bibtex-toggle" type="button">BibTeX</button>
-      <pre class="bibtex-entry" style="display: none;">{{ include.bibtex }}</pre>
+      <pre class="bibtex-entry" style="display: none;">
+        {{ include.bibtex }}
+      </pre>
     {% endif %}
 
 
@@ -101,9 +110,14 @@ Usage:
 </script>
 <script>
 document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("bibtex-toggle")) {
-    const bib = e.target.nextElementSibling;
-    bib.style.display = (bib.style.display === "none" || bib.style.display === "") ? "block" : "none";
+  const btn = e.target.closest(".bibtex-toggle");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const bib = btn.closest(".paper").querySelector(".bibtex-entry");
+  const isHidden = !bib || bib.style.display === "none" || bib.style.display === "";
+  if (bib) {
+    bib.style.display = isHidden ? "block" : "none";
   }
 });
 </script>
