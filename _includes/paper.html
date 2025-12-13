@@ -61,6 +61,12 @@ Usage:
         </a>
       {% endif %}
 
+      {% if include.ssrn_url %}
+        <a href="{{ include.ssrn_url }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+          SSRN
+        </a>
+      {% endif %}
+
       {% if include.bibtex %}
         <button class="btn btn--small bibtex-toggle" type="button">
           BibTeX
