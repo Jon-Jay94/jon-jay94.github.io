@@ -68,7 +68,7 @@ I will be on the academic job market in 2025/2026.
 
 ## Job Market Paper
 
-{% include paper.html title=page.jmp.title status=page.jmp.status abstract=page.jmp.abstract draft_url=page.jmp.draft_url bibtex=page.jmp.bibtex presentations=page.jmp.presentations expanded=true %}
+{% include paper.html title=page.jmp.title status=page.jmp.status abstract=page.jmp.abstract draft_url=page.jmp.draft_url ssrn_url=page.jmp.ssrn_url bibtex=page.jmp.bibtex presentations=page.jmp.presentations expanded=true %}
 
 
 ## Working Papers
