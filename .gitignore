@@ -1,2 +1,8 @@
 _site/
 
+# Locally installed gems (BUNDLE_PATH in .bundle/config points here).
+# Leading slash is deliberate: it anchors the rule to the repo root so it
+# does NOT match _sass/vendor/, which is theme SCSS and must stay tracked.
+# GitHub Pages builds with its own gem set and _config.yml excludes vendor,
+# so nothing here ever reached the deployed site.
+/vendor/
