@@ -1,0 +1,29 @@
+{% comment %}
+Highwire Press citation tags for Google Scholar indexing.
+Emitted only on pages that define `citation_title` in their front matter.
+
+Author names MUST be surname-first ("Camargos Jensen, Jonas") so that Scholar
+parses the multi-word family name correctly; this is the ONLY place on the site
+where the name is not written in natural order.
+
+Front matter contract:
+  citation_title:                          string  (required to emit anything)
+  citation_authors:                        list of "Surname, Given" strings
+  citation_publication_date:               "YYYY" or "YYYY/MM/DD"
+  citation_pdf_url:                        absolute URL to the PDF
+  citation_technical_report_institution:   string (optional)
+  citation_technical_report_number:        string (optional)
+  citation_abstract:                       string (optional)
+{% endcomment %}
+{% if page.citation_title %}
+<!-- begin Google Scholar (Highwire Press) citation tags -->
+<meta name="citation_title" content="{{ page.citation_title | strip_newlines | escape }}">
+{% for citation_author in page.citation_authors %}<meta name="citation_author" content="{{ citation_author | strip_newlines | escape }}">
+{% endfor %}{% if page.citation_publication_date %}<meta name="citation_publication_date" content="{{ page.citation_publication_date }}">
+{% endif %}{% if page.citation_technical_report_institution %}<meta name="citation_technical_report_institution" content="{{ page.citation_technical_report_institution | strip_newlines | escape }}">
+{% endif %}{% if page.citation_technical_report_number %}<meta name="citation_technical_report_number" content="{{ page.citation_technical_report_number | strip_newlines | escape }}">
+{% endif %}{% if page.citation_pdf_url %}<meta name="citation_pdf_url" content="{{ page.citation_pdf_url }}">
+{% endif %}<meta name="citation_abstract_html_url" content="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+{% if page.citation_abstract %}<meta name="citation_abstract" content="{{ page.citation_abstract | strip_newlines | escape }}">
+{% endif %}<!-- end citation tags -->
+{% endif %}

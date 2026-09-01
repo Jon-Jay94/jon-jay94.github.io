@@ -7,6 +7,7 @@ Usage:
   venue=""
   status="Job Market Paper"
   badges=""
+  page_url="/papers/some-paper/"
   draft_url="/files/jmp_draft.pdf"
   ssrn_url="https://ssrn.com/..."
   bibtex='@techreport{jensen2025,...}'
@@ -19,8 +20,9 @@ Usage:
 
 <div class="paper" id="paper-{{ include.title | slugify }}">
 <h3 class="paper__title">
-  {% if include.draft_url %}
-    <a href="{{ include.draft_url }}" class="paper__title-link" target="_blank" rel="noopener noreferrer">
+  {% assign paper_link = include.page_url | default: include.draft_url %}
+  {% if paper_link %}
+    <a href="{{ paper_link }}" class="paper__title-link"{% unless include.page_url %} target="_blank" rel="noopener noreferrer"{% endunless %}>
       {{ include.title }}
     </a>
   {% else %}

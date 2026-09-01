@@ -11,12 +11,13 @@ jmp:
   title: "Trading Volume and Monetary Policy Surprises"
   abstract: >-
     High-frequency identification of the causal effects of monetary policy relies on measuring monetary policy surprises--changes in interest rate futures prices in narrow windows around FOMC announcements. This paper revisits two key assumptions in their construction: fixed event windows and fixed loadings across the term structure. I introduce the Volume-Based Monetary Policy Surprise (VBS), which determines announcement-specific event windows and loadings from observed trading volume. Relaxing these assumptions substantially increases the estimated effects of monetary policy: the VBS doubles the impact on Treasury yields and equity markets and generates sizable impacts on macroeconomic aggregates. The flexible event windows capture price discovery that often extends beyond conventional 30-minute windows. The flexible loadings naturally shift toward longer-dated contracts when the Federal Reserve relies on forward guidance about future policy.
+  page_url: "/papers/trading-volume-and-monetary-policy-surprises/"
   draft_url: "/files/jonascamargosjensen_jmp.pdf"
   ssrn_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5859784"
   bibtex: |-
     @techreport{camargosjensen2025vbs,
       title={Trading Volume and Monetary Policy Surprises},
-      author={Camargos Jensen, Jonas},
+      author={{Camargos Jensen}, Jonas},
       year={2025}
     }
   presentations: "AFA 2026 - Poster Session, 9th HEC Paris Finance PhD Workshop, Barcelona Summer Forum - Advances in Structural Shock Identification, 3rd PhD Workshop on Money & Finance at Sveriges Riksbank"
@@ -26,11 +27,12 @@ paper1:
   abstract: >-
     This paper constructs a novel high-frequency liquidity news surprise to identify the effects of Federal Reserve liquidity facility announcements during the Global Financial Crisis and COVID-19 pandemic. Using local projections, we show that liquidity facility announcements substantially lower long-term Treasury yields, with a one percentage point expansionary surprise reducing 10-year yields by approximately 0.2 percentage points. This effect operates almost entirely through term premia rather than expected future short rates. Inconvenience yields on treasury securities fall substantially and primary dealers increase their relative holdings of Treasuries. Our findings demonstrate that liquidity facilities represent an effective tool which reduces risk premia during financial crises.
   coauthors: "with L. Boneva & S. Weidner"
+  page_url: "/papers/liquidity-facilities-high-frequency-identification/"
   draft_url: "/files/bcjw_liquidity_facilities.pdf"
   bibtex: |-
     @techreport{bonevacamargosjensenweidner2025,
       title={Liquidity Facilities: Evidence from High-Frequency Identification},
-      author={Boneva, Lena and Camargos Jensen, Jonas and Weidner, Stephanie},
+      author={Boneva, Lena and {Camargos Jensen}, Jonas and Weidner, Stephanie},
       year={2025}
     }
   presentations: "Lancaster ETM Workshop 2024, ECB"
@@ -68,12 +70,12 @@ I will be on the academic job market in 2025/2026.
 
 ## Job Market Paper
 
-{% include paper.html title=page.jmp.title status=page.jmp.status abstract=page.jmp.abstract draft_url=page.jmp.draft_url ssrn_url=page.jmp.ssrn_url bibtex=page.jmp.bibtex presentations=page.jmp.presentations expanded=true %}
+{% include paper.html title=page.jmp.title status=page.jmp.status page_url=page.jmp.page_url abstract=page.jmp.abstract draft_url=page.jmp.draft_url ssrn_url=page.jmp.ssrn_url bibtex=page.jmp.bibtex presentations=page.jmp.presentations expanded=true %}
 
 
 ## Working Papers
 
-{% include paper.html title=page.paper1.title coauthors=page.paper1.coauthors abstract=page.paper1.abstract draft_url=page.paper1.draft_url bibtex=page.paper1.bibtex presentations=page.paper1.presentations expanded=false %}
+{% include paper.html title=page.paper1.title coauthors=page.paper1.coauthors page_url=page.paper1.page_url abstract=page.paper1.abstract draft_url=page.paper1.draft_url bibtex=page.paper1.bibtex presentations=page.paper1.presentations expanded=false %}
 
 
 
