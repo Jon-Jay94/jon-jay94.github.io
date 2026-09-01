@@ -33,7 +33,7 @@ High-frequency identification of the causal effects of monetary policy relies on
 <h2>Citation</h2>
 
 <div class="bibtex">
-<pre class="bibtex-entry">@techreport{camargosjensen2025vbs,
+{% raw %}<pre class="bibtex-entry">@techreport{camargosjensen2025vbs,
   title  = {Trading Volume and Monetary Policy Surprises},
   author = {{Camargos Jensen}, Jonas},
   year   = {2025},
@@ -41,7 +41,7 @@ High-frequency identification of the causal effects of monetary policy relies on
   number = {5859784},
   institution = {Frankfurt School of Finance \& Management},
   url    = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5859784}
-}</pre>
+}</pre>{% endraw %}
 </div>
 
 <h2>Selected presentations</h2>

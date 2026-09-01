@@ -33,12 +33,12 @@ This paper constructs a novel high-frequency liquidity news surprise to identify
 <h2>Citation</h2>
 
 <div class="bibtex">
-<pre class="bibtex-entry">@techreport{bonevacamargosjensenweidner2025,
+{% raw %}<pre class="bibtex-entry">@techreport{bonevacamargosjensenweidner2025,
   title  = {Liquidity Facilities: Evidence from High-Frequency Identification},
   author = {Boneva, Lena and {Camargos Jensen}, Jonas and Weidner, Stephanie},
   year   = {2025},
   institution = {Frankfurt School of Finance \& Management}
-}</pre>
+}</pre>{% endraw %}
 </div>
 
 <h2>Selected presentations</h2>
