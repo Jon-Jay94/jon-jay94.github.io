@@ -60,20 +60,15 @@ paper2:
 }
 </style>
 
-Hi, I'm Jonas Camargos Jensen. I'm a PhD candidate in Financial Economics at the **Frankfurt School of Finance & Management**. 
+Hi, I'm Jonas Camargos Jensen. I'm a research economist in the Monetary Policy and Euro Area Economy Division at the **Banco de España**. I received my PhD in Financial Economics from the Frankfurt School of Finance & Management in 2026.
 
-My research lies in the intersection of **monetary economics and asset pricing**, focusing on how financial markets and central banks interact.
-
-I will be on the academic job market in 2025/2026.
+My research lies at the intersection of **monetary economics and asset pricing**, focusing on how financial markets and central banks interact.
 
 ---
 
-## Job Market Paper
+## Working Papers
 
 {% include paper.html title=page.jmp.title status=page.jmp.status page_url=page.jmp.page_url abstract=page.jmp.abstract draft_url=page.jmp.draft_url ssrn_url=page.jmp.ssrn_url bibtex=page.jmp.bibtex presentations=page.jmp.presentations expanded=true %}
-
-
-## Working Papers
 
 {% include paper.html title=page.paper1.title coauthors=page.paper1.coauthors page_url=page.paper1.page_url abstract=page.paper1.abstract draft_url=page.paper1.draft_url bibtex=page.paper1.bibtex presentations=page.paper1.presentations expanded=false %}
 

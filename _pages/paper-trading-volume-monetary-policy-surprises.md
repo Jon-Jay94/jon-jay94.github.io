@@ -2,7 +2,7 @@
 title: "Trading Volume and Monetary Policy Surprises"
 permalink: /papers/trading-volume-and-monetary-policy-surprises/
 author_profile: true
-description: "Job market paper. Introduces the Volume-Based Monetary Policy Surprise (VBS), which determines announcement-specific event windows and loadings from observed trading volume."
+description: "Introduces the Volume-Based Monetary Policy Surprise (VBS), which determines announcement-specific event windows and loadings from observed trading volume."
 
 # Google Scholar (Highwire Press) metadata.
 # Surname-first form is required here so Scholar parses the family name
@@ -17,7 +17,7 @@ citation_pdf_url: "https://jonasjensen.eu/files/jonascamargosjensen_jmp.pdf"
 ---
 
 <p class="paper__meta">Jonas Camargos Jensen<br>
-Working paper, 2025 &middot; <span class="badge">Job Market Paper</span></p>
+Working paper, 2025</p>
 
 <h2>Abstract</h2>
 
